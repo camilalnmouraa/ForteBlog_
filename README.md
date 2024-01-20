@@ -1,99 +1,100 @@
-<h2 align="center"> Plano de Testes: Forte Blog - Plataforma Interna de Colaboração </h2>
+# Escopo de Testes - Forte Blog
 
-<br>
+- [Objetivo](#objetivo)
+- [Layout e Usabilidade](#layout-e-usabilidade)
+- [Funcionalidades Principais](#funcionalidades-principais)
+- [Segurança e Privacidade dos Dados](#segurança-e-privacidade-dos-dados)
+- [Desempenho e Escalabilidade](#desempenho-e-escalabilidade)
+- [Casos de Teste Adicionais](#casos-de-teste-adicionais)
+- [Ambiente de Teste](#ambiente-de-teste)
+- [Automação](#automação)
 
-- [ Introdução ](#Introdução)
-- [ Objetivo do Teste ](#Objetivo-do-Teste)
-- [ Escopo do Teste ](#Escopo-do-Teste)
-- [ Casos de Teste ](#Casos-de-Teste)
-- [ Ambiente de Teste ](#Ambiente-de-Teste)
-- [ Critérios de Aceitação ](#Critérios-de-Aceitação)
-- [ Documentação de Bugs e Comunicação ](#Documentação-de-Bugs-e-Comunicação)
+## Objetivo
 
-<br>
+O objetivo deste escopo de testes é definir os limites e áreas específicas abordadas nos testes da plataforma Forte Blog, garantindo qualidade, segurança, desempenho e usabilidade para uma experiência positiva dos usuários.
 
+## 1. Layout e Usabilidade
 
-## Introdução
+### 1.1 Layout e Temas
+- Garantir estética agradável e adaptação aos temas claro e escuro.
+- Verificar integração visual da logo da empresa no tema claro.
 
-<br>
+### 1.2 Usabilidade
+- Testar interação ao clicar na foto do perfil e selecionar botões.
+- Verificar presença da opção de sair ao clicar na lupa.
+- Avaliar facilidade de uso na navegação entre diferentes seções.
 
-O Forte Blog é uma plataforma interna de colaboração desenvolvida para permitir que membros da equipe publiquem artigos técnicos, atualizações de projetos e ideias. Este plano de testes visa garantir que o software atenda aos requisitos especificados, proporcionando uma experiência de usuário confiável.
+## 2. Funcionalidades Principais
 
-<br>
+### 2.1 Publicação de Artigos
+- Testar processo de publicação, incluindo validação de campos obrigatórios.
+- Confirmar visibilidade correta dos artigos na página inicial após publicação.
 
-## Objetivo do Teste
+### 2.2 Interagir com Comentários
+- Validar adição, edição e exclusão de comentários.
+- Assegurar que notificações relacionadas a comentários sejam geradas corretamente.
 
-<br>
+### 2.3 Pesquisar e Filtrar Conteúdo
+- Testar funcionalidade de pesquisa por título de artigo.
+- Avaliar precisão da filtragem por categoria.
+- Verificar se pesquisa é mantida ao navegar entre as páginas.
 
-O objetivo principal é garantir que o Forte Blog atenda aos requisitos especificados e ofereça uma experiência de usuário consistente, segura e eficaz para a equipe de desenvolvimento.
+## 3. Segurança e Privacidade dos Dados
 
-<br>
+### 3.1 Autenticação e Autorização
+- Garantir autenticação necessária para ações específicas.
+- Verificar acesso restrito a dados privados de acordo com permissões do usuário.
 
-##  Escopo do Teste
+### 3.2 Proteção contra Ataques
+- Testar segurança contra injeções de SQL e Cross-Site Scripting (XSS) nos campos de entrada.
 
-#### Testes Funcionais:
+## 4. Desempenho e Escalabilidade
 
-1. Verificar a funcionalidade de publicação de artigos.
-2. Avaliar o sistema de comentários e interação.
-3. Testar a responsividade em diferentes dispositivos.
+### 4.1 Performance Geral
+- Avaliar velocidade de carregamento das páginas principais.
+- Testar escalabilidade ao adicionar grande número de publicações e comentários.
 
-#### Testes de Desempenho:
+### 4.2 Otimização de Banco de Dados
+- Avaliar eficiência das consultas ao banco de dados.
+- Testar performance durante buscas e filtragens intensivas.
 
-1. Avaliar o tempo de carregamento das páginas.
-2. Testar a escalabilidade da plataforma com carga simulada.
+## 5. Casos de Teste Adicionais
 
-#### Testes de Segurança e Privacidade:
+### 5.1 Interação com Comentários
+- Validar experiência ao adicionar, editar e excluir comentários.
 
-1. Verificar a presença de HTTPS na conexão.
-2. Garantir que os dados dos usuários estejam protegidos.
+### 5.2 Compartilhamento de Publicações
+- Testar funcionalidade de compartilhamento de publicações.
 
-#### Testes de Usabilidade:
+### 5.3 Gerenciamento de Perfil
+- Avaliar capacidade de editar informações de perfil e alterar senha.
 
-1. Avaliar a facilidade de navegação e uso da interface.
-2. Verificar se a interface atende aos padrões de design estabelecidos.
+### 5.4 Experiência do Novo Usuário
+- Testar processo de registro de um novo usuário.
+- Avaliar orientação ou tutorial para novos usuários.
 
-<br>
+### 5.5 Navegação entre Páginas
+- Confirmar navegação suave e consistência de informações em diferentes páginas.
 
+### 5.6 Testes de Performance
+- Avaliar desempenho em condições de tráfego intenso.
 
-## Casos de Teste
-<br>
+### 5.7 Suporte a Diferentes Navegadores
+- Testar compatibilidade com navegadores populares.
 
-[VS Code](https://code.visualstudio.com/)
+### 5.8 Resiliência a Falhas
+- Avaliar capacidade de recuperação após falhas de rede ou erros inesperados do servidor.
 
-<br>
+### 5.9 Acessibilidade
+- Testar acessibilidade usando um leitor de tela e verificando descrições adequadas para elementos visuais.
 
 ## Ambiente de Teste
 
-- Navegadores: Chrome, Firefox, Edge
-- Dispositivos: Desktop, Tablet, Celular
-- Sistemas Operacionais: Windows, MacOS, Android, iOS
-<br>
+- Navegador: Chrome - Versão 120.0.6099.225 (Versão oficial)
+- Dispositivos: Desktop, [Mobile simulator - responsive testing tool](https://chromewebstore.google.com/detail/ckejmhbmlajgoklhgbapkiccekfoccmk) e [PageSpeed](https://pagespeed.web.dev/)
+- Sistemas Operacionais: Windows
 
-## Critérios de Aceitação
 
-1. Todos os casos de teste passam com sucesso.
-2. Não há bugs críticos ou bloqueadores não resolvidos.
-3. A plataforma respeita os requisitos de segurança e privacidade.
-4. A interface é responsiva e apresenta bom desempenho.
-
-<br>
-
-## Documentação de Bugs e Comunicação
-
-#### Documentação de Bugs:
-
-- Utilizar o Google Docs conforme especificado.
-- Incluir detalhes como:
-  - Passos para reproduzir o bug.
-  - Comportamento esperado e observado.
-  - Navegador utilizado.
-  - Qualquer informação adicional relevante.
-
-#### Comunicação:
-
-- Relatar regularmente o progresso à equipe de desenvolvimento.
-
-<br>
 
 ## Automação
 
