@@ -33,8 +33,14 @@ O objetivo deste escopo de testes é definir os limites e áreas específicas ab
 ## Ambiente de Teste
 
 - Navegador: Chrome - Versão 120.0.6099.225 (Versão oficial)
-- Dispositivos: Desktop, [Mobile simulator - responsive testing tool](https://chromewebstore.google.com/detail/ckejmhbmlajgoklhgbapkiccekfoccmk) e [PageSpeed](https://pagespeed.web.dev/)
+- Dispositivos: Desktop, [Mobile simulator - responsive testing tool](https://chromewebstore.google.com/detail/ckejmhbmlajgoklhgbapkiccekfoccmk)
 - Sistemas Operacionais: Windows
+
+<br>
+
+> **Aviso:**
+>
+> Os nomes clicáveis no escopo de testes direcionam para a documentação, onde estão armazenadas as evidências dos testes. Para acessar o documento completo, clique [aqui](https://docs.google.com/document/d/11BH6Z6fQrM6aLOxL9q49wQ6WxBHFsi9mxNi5K3tTjVA/edit?usp=sharing).
 
 <br>
 
